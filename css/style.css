@@ -2,6 +2,7 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  /* border: 2px solid blue; */
 }
 
 *:not(dialog) {
@@ -190,6 +191,7 @@ h1 {
   text-decoration: none;
   padding: 1rem 2.5rem;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .hero-cta {
@@ -198,4 +200,44 @@ h1 {
   text-decoration: none;
   padding: 1rem 2rem;
   text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about {
+  background-color: var(--color-muted);
+  min-height: 30vh;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  /* align-items: center ; */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 40%;
+}
+
+.about-label {
+  margin-top: 30px;
+}
+
+.about-visual {
+  height: 30vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-visual img {
+  width: 75%;
+  height: 75%; 
+  object-fit: cover;
+
 }
